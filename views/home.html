@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation</title>
+</head>
+<body>
+    <form id="book-form" action="/submit-booking" method="post">
+        <feildset>
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination">
+                <option value="none">-- Choose a destination...</option>
+                <option value="hawaii">Hawaii</option>
+                <optin value="nagasaki">Nagasaki, Japan</optin>
+                <option value="hogwarts">Hogwarts</option>
+                <option value="narnia">Narnia</option>
+                <option value="hotel-california">Hotel California</option>
+            </select>
+            <span class="err" id="err-destination">Destination must be selected</span>
+
+            <label for="depart-date">Departure Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" name="travelers">
+            <span class="err" id="err-travelers">Number of travelers must be greater than 0</span>
+
+        </feildset>
+    </form>
+</body>
+</html>
