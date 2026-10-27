@@ -29,6 +29,11 @@ app.post('/submit-booking', (req, res) => {
 
 })
 
+// Add admin route
+app.get('/admin', (req, res) => {
+    res.send(bookings);
+});
+
 app.listen(PORT, () => {
     console.log(`Sever is running at
         http://localhost:${PORT}`)
