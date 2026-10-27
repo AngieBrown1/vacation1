@@ -1,4 +1,33 @@
+html{
+    background-color: rgb(164, 194, 167);
+}
+
 .err{
     display: none;
     color: red;
+}
+
+div{
+    position: relative;
+}
+
+#header img{
+    max-width: 100%;
+}
+
+#header h1{
+    font-weight: 600;
+    color: white;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10px;
+    left: 15 px;
+
+}
+
+form{
+    display: grid;
+    grid-template-columns: 200px 100px 20px;
+    grid-template-rows: 100px;
+    gap: 10px;
 }
